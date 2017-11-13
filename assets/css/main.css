@@ -1,0 +1,90 @@
+body {
+  background-color: #E9EBEE;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-container-bg {
+
+}
+
+.top-container-bg {
+  /*background-image: url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_527bf56961712_1.JPG');*/
+  background-size: cover;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  height: 250px;
+}
+
+.main-box {
+  margin-top: -25rem;
+  padding: 10rem;
+}
+
+.card {
+    display: block;
+    padding: 0em;
+    float: left;
+    width: 100%;
+    background: #fff;
+    height: 55rem;
+    border: 0px solid rgba(0,0,0,.125);
+    border-radius: .10rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+  padding: 3rem;
+  background: #0277BD;
+  height: 25rem;
+}
+
+.card-body {
+  padding: 1rem;
+    margin-top: 1rem;
+}
+
+.panel-box {
+    margin-top: -5rem;
+}
+
+.panel-info {
+  display: block;
+  padding: 0em;
+  float: left;
+  width: 100%;
+  background: #fff;
+  min-height: 5rem;
+  border: 0px solid rgba(0,0,0,.125);
+  border-radius: .10rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.profile-pic {
+  width: 12rem;
+  height: 12rem;
+  text-align: center;
+}
+
+.profile-info {
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.centered {
+  margin-left: auto;
+  	margin-right: auto;
+  	display: block;
+}
+
+.img-circle {
+    border-radius: 50%;
+    border: .4rem solid #fff;
+}
+
+.panel-pic {
+  width: 35%;
+  float: left;
+}
