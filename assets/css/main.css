@@ -41,16 +41,18 @@ body {
 
 .card-body {
   padding: 1rem;
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .panel-box {
-    margin-top: -5rem;
+  margin-top: -5rem;
+  margin-bottom: 6rem;
+
 }
 
 .panel-info {
   display: block;
-  padding: 0em;
+  padding: .5em;
   float: left;
   width: 100%;
   background: #fff;
@@ -73,6 +75,19 @@ body {
   color: #fff;
 }
 
+.profile-info .title {
+  padding: .2rem;
+  width: 100%;
+  float: left;
+}
+
+.profile-info .subtitle {
+  padding: .1rem;
+  width: 100%;
+  float: left;
+  font-size: 1rem;
+}
+
 .centered {
   margin-left: auto;
   	margin-right: auto;
@@ -87,4 +102,23 @@ body {
 .panel-pic {
   width: 35%;
   float: left;
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.item-column {
+  flex: 1;
+  text-align: center;
+}
+
+.item-column .title {
+  width: 100%;
+  float: left;
+  font-size: 3rem;
+}
+
+.item-column .subtitle {
+  font-size: 1.4rem;
 }
