@@ -20,6 +20,7 @@ var Main = (function() {
     el.repoCount           = $('#repo-count');
     el.followerCount       = $('#follower-count');
     el.followingCount      = $('#following-count');
+    el.bioInfo             = $('#bio-info');
   };
 
   // request github data
@@ -45,6 +46,7 @@ var Main = (function() {
     el.profilePicture.html(imgPic);
     el.profileName.html(response.name);
     el.profileLocation.html('<i class="fa fa-map-marker" aria-hidden="true"></i>'+' '+response.location);
+    el.bioInfo.html(response.bio);
   };
 
   method.githubInfoDOM = function (response) {

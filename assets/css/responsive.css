@@ -1,0 +1,49 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-6 {
+      padding-left: 10rem;
+      padding-right: 10rem;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+
+  html {
+      font-size: .625em;
+  }
+
+  body {
+      font-size: 12px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  html {
+      font-size: .5em;
+  }
+  body {
+      font-size: 10px;
+  }
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+  html {
+      font-size: .4em;
+  }
+  body {
+      font-size: 9px;
+  }
+
+}

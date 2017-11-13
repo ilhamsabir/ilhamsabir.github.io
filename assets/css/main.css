@@ -17,8 +17,8 @@ body {
 }
 
 .main-box {
-  margin-top: -25rem;
-  padding: 10rem;
+  margin-top: 5rem;
+  /*padding: 5rem 10rem 10rem 10rem;*/
 }
 
 .card {
@@ -90,8 +90,8 @@ body {
 
 .centered {
   margin-left: auto;
-  	margin-right: auto;
-  	display: block;
+	margin-right: auto;
+	display: block;
 }
 
 .img-circle {
@@ -110,7 +110,6 @@ body {
 
 .item-column {
   flex: 1;
-  text-align: center;
 }
 
 .item-column .title {
