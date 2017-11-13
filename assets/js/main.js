@@ -6,11 +6,22 @@ var Main = (function() {
   var url = {
     github:  "https://api.github.com/users/ilhamsabir"
   };
+  var userAgent = {
+    android: navigator.userAgent.match(/Android/i),
+    webOs: navigator.userAgent.match(/webOS/i),
+    ipad: navigator.userAgent.match(/iPad/i),
+    ipod: navigator.userAgent.match(/iPod/i),
+    iphone: navigator.userAgent.match(/iPhone/i),
+    blackberry: navigator.userAgent.match(/BlackBerry/i),
+    windowsPhone: navigator.userAgent.match(/Windows Phone/i)
+  };
+  var idNumber = "6285299044200";
 
   // init all method
   method.init = function (){
     method.requestGithub();
     method.selector();
+    method.clickMessage();
   };
 
   method.selector = function () {
@@ -21,6 +32,7 @@ var Main = (function() {
     el.followerCount       = $('#follower-count');
     el.followingCount      = $('#following-count');
     el.bioInfo             = $('#bio-info');
+    el.messageBtn          = $('#message-button');
   };
 
   // request github data
@@ -50,10 +62,28 @@ var Main = (function() {
   };
 
   method.githubInfoDOM = function (response) {
-
     el.repoCount.html(response.public_repos);
     el.followerCount.html(response.followers);
     el.followingCount.html(response.following);
+  };
+
+  method.clickMessage = function () {
+		var prefix;
+
+	    // Android and iphone
+		if ( userAgent.android  || userAgent.iphone || userAgent.ipad || userAgent.ipod ){
+
+	        prefix = 'https://api.whatsapp.com/send?phone='+idNumber;
+
+	    // pc dekstop
+	    } else {
+
+	        prefix = 'https://web.whatsapp.com/send?phone='+idNumber;
+	    }
+
+    el.messageBtn.on('click', function() {
+      window.location.href = prefix;
+    });
   };
 
   return method;
